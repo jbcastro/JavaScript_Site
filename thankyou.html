@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Appointments</title>
+      
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+      
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      
+
+      
+<link rel="stylesheet" href="css/web.css" />
+      
+  </head>
+  <body>
+      <div class="header">
+    <div class="container">
+    <div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="home.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="aboutus.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+    
+      <h1>Crazy Dog Haircuts Inc.</h1>
+      
+        
+    </div>
+  </div>
+        
+    <h1>Thank you, your appointment has been scheduled</h1>
+    
+      </form>
+    </div>
+    <script>
+        
+    
+        
+
+      function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+        
+  
+        
+        
+       
+
+   
+      
+      </script>
+  </body>
+</html>

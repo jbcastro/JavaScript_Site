@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+      
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+      
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      
+
+      
+<link rel="stylesheet" href="css/web.css" />
+      
+  </head>
+  <body>
+      <div class="header">
+    <div class="container">
+    <div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="home.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="aboutus.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+    
+      <h1>Crazy Dog Haircuts Inc.</h1>
+      
+        
+    </div>
+  </div>
+        
+    
+    <div id="page3">
+      <ul>
+          <li id="one" class="funny"><h1> Welcome to Crazy Dog Haircuts Inc. </h1>
+              <h3></h3>
+            </li>
+            <li id="two" class="cute">
+            </li>
+          <li id="three" class="classic">Luis and Tone Loc
+                <p><img src="images/luis2tone.jpg" alt="Luis and 2 tone"></p>
+                <p>"Man I always wanted a dog with a crazy haircut and now I do!"</p>
+            
+            </li>
+            
+            <li id="four" class="funny">
+            
+            </li>
+            <li id="five" class="classic">WHERE WE ONLY DO
+                <p><img src="images/camel.jpg"></p>
+          </li>
+            <li id="six" class="classic">CRAAZZY CUTS
+                <p><img src="images/horse.jpg"></p>
+            
+            </li>
+          
+            </ul>
+        
+
+    <script>
+        
+
+      function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+var fifthItem = document.getElementsByTagName('li').item(4);
+        fifthItem.setAttribute('class','cute');
+        
+         var removeEl = document.getElementById('three');
+        var containerEL = removeEl.parentNode; 
+        containerEL.removeChild(removeEl); 
+        
+        var elements = document.getElementsByClassName('funny');
+            if (elements.length > 1) {
+                var el = elements[0];
+                el.className = 'cute';
+            }
+
+$('li[id!="one"]').hide().delay(500).fadeIn(5000);
+      
+      </script>
+  </body>
+</html>

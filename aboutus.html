@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Accordion - Default functionality</title>
+     
+  <link rel="stylesheet" href="css/web.css">
+   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+    
+  <script>
+ $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  
+     function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+     
+    </script>
+    
+</head>
+<body>
+    <div class="header">
+    <div class="container">
+    <div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="home.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="aboutus.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+    
+      <h1>Crazy Dog Haircuts Inc.</h1>
+      
+        
+    </div>
+  </div>
+    <div id="page2">
+    
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Our Story</a></li>
+    <li><a href="#tabs-2">Locations</a></li>
+    <li><a href="#tabs-3">The Future</a></li>
+  </ul>
+  <div id="tabs-1">
+      <p>Once upon a time not too long ago a man had an idea. He was walking down downtown Seattle during a cosplay convention and thought "what if dogs did cosplay, but instead of just dressing them up what if they were cut and painted like that?" This idea amused him so he left his job as an investment banker to start Crazy Dog Haircuts Inc.</p>
+      <p>That man is our CEO Steve Swanson and after taking a large fortune and turning it into a small one, he finally has gotten the reconition he thinks he deserves. Crazy Dog Haircuts Inc. now has 3 locations in Seattle, San Francisco, and Portland.</p>
+      </div>
+  
+  <div id="tabs-2">
+    <p>
+   <h1>Seattle</h1>
+      <h3>1234489 Not Even A Real Street Br.</h3>
+      <h3>Seatte, WA 98122</h3>
+      <h1>San Francisco</h1>
+      <h3>1050 Twin Peaks Blvd</h3>
+      <h3>San Francisco, CA 94117</h3>
+      <h1>Portland</h1>
+      <h3>4 Some Rando St.</h3>
+      <h3>Portland, OR 86753</h3>
+      </p>
+  </div>
+  <div id="tabs-3">
+    <p>What is in store for the future you ask? Well lot's of stuff, that's what</p>
+      <p>We want to win the dog cut championship, like a billion times. Then the Nobel Peace Prize. Maybe send a dog with a crazy cut to the moon (although I know dogs are afraid of vacuums and that's pretty much all of what space is). Then on to D.C. to give those guys a piece of our mind. Then get 5 mics in Source. Then other stuff, you'll see.</p>
+  </div>
+</div>
+ 
+</body>
+</html>
